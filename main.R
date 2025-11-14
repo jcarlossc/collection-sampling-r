@@ -30,3 +30,24 @@ View(alunos)
 
 # --------------------------------------------------
 
+# Exemplos de tipos de amostragem em linguagem R.
+
+# 1. Amostragem aleatória: a função sample(), com o suporte da
+# função nrow(), escolhe aleatoriamente 20 linhas do
+# conjunto de dados.
+amostra_aleatoria <- alunos[sample(nrow(alunos), 20),]
+
+# A função data.frame() cria outro conjunto de dados com
+# as 20 observações.
+df_amostra_aleatoria <- data.frame(amostra_aleatoria)
+
+# Imprime as primeiras linhas do data frame.
+head(df_amostra_aleatoria)
+
+# Conta a quantidade de linhas.
+nrow(df_amostra_aleatoria
+     
+# --------------------------------------------------
+
+
+     
