@@ -49,9 +49,7 @@ nrow(df_amostra_aleatoria
      
 # --------------------------------------------------
 
-# 2. Amostragem sistemática: a função
-# 
-# 
+# 2. Amostragem sistemática:
 
 # Total da população.
 total_linhas <- nrow(alunos)
