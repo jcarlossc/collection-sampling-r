@@ -49,5 +49,33 @@ nrow(df_amostra_aleatoria
      
 # --------------------------------------------------
 
+# 2. Amostragem sistemática: a função
+# 
+# 
 
-     
+# Total da população.
+total_linhas <- nrow(alunos)
+
+# Tamanho da amostra.
+tamanho_amostra <- 20    
+
+# Intervalo.
+intervalo <- floor(total_linhas / tamanho_amostra) 
+
+# Cria início da contagem.
+inicio <- sample(1: intervalo, 1)
+
+# A função seq() cria uma sequência dos índices da amostra 
+# sistemática.
+amostra_sistematica <- seq(inicio, by = intervalo, length.out = tamanho_amostra) 
+
+# A função data.frame() cria outro conjunto de dados com
+# os 20 índices da amostra.
+df_amostra_sistematica <- data.frame(amostra_sistematica)
+
+# Imprime os índices da amostra.
+df_amostra_sistematica
+
+# --------------------------------------------------
+
+
