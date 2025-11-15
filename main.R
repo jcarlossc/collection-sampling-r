@@ -49,9 +49,10 @@ nrow(df_amostra_aleatoria
      
 # --------------------------------------------------
 
-# 2. Amostragem sistemática:
+# 2. Amostragem sistemática: O primeiro elemento é escolhido 
+# e os demais seguem um intervalo fixo.
 
-# Total da população.
+# Total de linhas da população.
 total_linhas <- nrow(alunos)
 
 # Tamanho da amostra.
@@ -73,6 +74,23 @@ df_amostra_sistematica <- data.frame(amostra_sistematica)
 
 # Imprime os índices da amostra.
 df_amostra_sistematica
+
+# --------------------------------------------------
+
+library(dplyr)
+# 3. Amostragem estratificada: Divide a população em estratos 
+# homogêneos (ex: sexo) e realiza sorteios em 
+# cada grupo de forma proporcional.
+
+# Utilizando o pacote dplyr(), a função agrupa por sexo e 
+# slice_sample() para separar proporcionalmente, ou seja,
+# 20 observações(12 "M" e 8 "F").
+amostra_estratificada <- alunos %>%
+  group_by(sexo) %>%
+  slice_sample(prop = 0.2)
+
+# Imprime o resultado.
+amostra_estratificada  
 
 # --------------------------------------------------
 
