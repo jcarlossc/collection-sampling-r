@@ -22,12 +22,12 @@ de forma manual, automatizada ou via fontes externas.
 
 ## 📌 Amostragem Estatística
 
-### AMOSTRAGES PROBABILÍSTICAS
+### 📌 Amostragem Probabilísticas
 - Amostragem aleatória.
 - Amostragem Sistematica.
 - Amostragem Estratificada.
 
-### AMOSTRAGENS NÃO PROBABILÍSTICAS
+### 📌 Amostragem Não Probabilísticas
 - Amostragem por Conveniência.
 - Amostragem Intencional (ou por Julgamento).
 - Amostragem por Cotas.
@@ -121,6 +121,7 @@ Este projeto está licenciado sob a MIT License.
 📌Twitter/X: https://x.com/jcarlossc1977
 
 ---
+
 
 
 
