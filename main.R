@@ -30,7 +30,7 @@ View(alunos)
 
 # --------------------------------------------------
 
-# AMOSTRAGEM PROBABILÍSTICAS
+# AMOSTRAGES PROBABILÍSTICAS
 # Amostragem aleatória.
 # Amostragem Sistematica.
 # Amostragem Estratificada.
@@ -98,7 +98,7 @@ amostra_estratificada
 
 # --------------------------------------------------
 
-# AMOSTRAGEM NÃO PROBABILÍSTICAS
+# AMOSTRAGENS NÃO PROBABILÍSTICAS
 # Amostragem aleatória.
 # Amostragem Sistematica.
 # Amostragem Estratificada.
