@@ -30,7 +30,10 @@ View(alunos)
 
 # --------------------------------------------------
 
-# Exemplos de tipos de amostragem em linguagem R.
+# AMOSTRAGEM PROBABILÍSTICAS
+# Amostragem aleatória.
+# Amostragem Sistematica.
+# Amostragem Estratificada.
 
 # 1. Amostragem aleatória: a função sample(), com o suporte da
 # função nrow(), escolhe aleatoriamente 20 linhas do
@@ -78,6 +81,7 @@ df_amostra_sistematica
 # --------------------------------------------------
 
 library(dplyr)
+
 # 3. Amostragem estratificada: Divide a população em estratos 
 # homogêneos (ex: sexo) e realiza sorteios em 
 # cada grupo de forma proporcional.
@@ -91,6 +95,20 @@ amostra_estratificada <- alunos %>%
 
 # Imprime o resultado.
 amostra_estratificada  
+
+# --------------------------------------------------
+
+# AMOSTRAGEM NÃO PROBABILÍSTICAS
+# Amostragem aleatória.
+# Amostragem Sistematica.
+# Amostragem Estratificada.
+
+# 1. Amostragem por Conveniência:
+# Selecionando manualmente os 20 primeiros registros.
+amostra_conveniencia <- head(alunos, 20)
+
+# Imprime resultados
+amostra_conveniencia
 
 # --------------------------------------------------
 
