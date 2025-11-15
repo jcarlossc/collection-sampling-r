@@ -117,6 +117,19 @@ amostra_conveniencia
 amostra_intencional <- alunos %>%
   filter(idade > 27)
 
+# Imprime resultados.
 amostra_intencional
 
+# --------------------------------------------------
 
+# 3. Amostragem por Cotas: 
+# Semelhante à estratificada, mas sem aleatoriedade, mantendo
+# proporções pré-definidas.
+amostra_cotas <- rbind(
+  head(subset(alunos, sexo == "M"), 10),
+  head(subset(alunos, sexo == "F"), 10)
+)
+# Imprime resultados
+amostra_cotas
+
+# --------------------------------------------------
