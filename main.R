@@ -112,4 +112,11 @@ amostra_conveniencia
 
 # --------------------------------------------------
 
+# 2. Amostragem Intencional (ou por Julgamento)
+# O pesquisador escolhe elementos que considera mais representativos.
+amostra_intencional <- alunos %>%
+  filter(idade > 27)
+
+amostra_intencional
+
 
