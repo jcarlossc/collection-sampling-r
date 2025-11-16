@@ -35,7 +35,7 @@ View(alunos)
 # Amostragem Sistematica.
 # Amostragem Estratificada.
 
-# 1. Amostragem aleatória: a função sample(), com o suporte da
+# 1. Amostragem aleatória: a função sample(), com suporte da
 # função nrow(), escolhe aleatoriamente 20 linhas do
 # conjunto de dados.
 amostra_aleatoria <- alunos[sample(nrow(alunos), 20),]
@@ -122,7 +122,7 @@ amostra_intencional
 
 # --------------------------------------------------
 
-# 3. Amostragem por Cotas: 
+# 3. Amostragem por Cotas.
 # Semelhante à estratificada, mas sem aleatoriedade, mantendo
 # proporções pré-definidas.
 amostra_cotas <- rbind(
