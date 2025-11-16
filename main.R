@@ -7,7 +7,7 @@
 # web via APIs.
 
 # Exemplo de coleta de dados com arquivo csv via função
-# read.csv da linguagem R.
+# read.csv em linguagem R.
 
 alunos <- read.csv(file = "alunos_csv/alunos.csv")
 
@@ -35,7 +35,7 @@ View(alunos)
 # Amostragem Sistematica.
 # Amostragem Estratificada.
 
-# 1. Amostragem aleatória: a função sample(), com o suporte da
+# 1. Amostragem aleatória: a função sample(), com suporte da
 # função nrow(), escolhe aleatoriamente 20 linhas do
 # conjunto de dados.
 amostra_aleatoria <- alunos[sample(nrow(alunos), 20),]
@@ -86,7 +86,7 @@ library(dplyr)
 # homogêneos (ex: sexo) e realiza sorteios em 
 # cada grupo de forma proporcional.
 
-# Utilizando o pacote dplyr(), a função agrupa por sexo e 
+# Utilizando o pacote dplyr(), a função group_by() agrupa por sexo e 
 # slice_sample() para separar proporcionalmente, ou seja,
 # 20 observações(12 "M" e 8 "F").
 amostra_estratificada <- alunos %>%
@@ -99,9 +99,9 @@ amostra_estratificada
 # --------------------------------------------------
 
 # AMOSTRAGENS NÃO PROBABILÍSTICAS
-# Amostragem aleatória.
-# Amostragem Sistematica.
-# Amostragem Estratificada.
+# Amostragem por Conveniência.
+# Amostragem Intencional (ou por Julgamento).
+# Amostragem por Cotas.
 
 # 1. Amostragem por Conveniência:
 # Selecionando manualmente os 20 primeiros registros.
@@ -122,7 +122,7 @@ amostra_intencional
 
 # --------------------------------------------------
 
-# 3. Amostragem por Cotas: 
+# 3. Amostragem por Cotas.
 # Semelhante à estratificada, mas sem aleatoriedade, mantendo
 # proporções pré-definidas.
 amostra_cotas <- rbind(
